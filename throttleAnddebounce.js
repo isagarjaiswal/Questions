@@ -27,7 +27,6 @@ function throttle(cb, delay) {
     let now = Date.now();
     if (now - exuTime >= delay) {
       cb(...args);
-
       exuTime = now;
     }
   };
